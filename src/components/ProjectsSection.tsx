@@ -9,7 +9,7 @@ const ProjectsSection = () => {
       title: "Portfolio Website",
       description: "A modern, responsive portfolio website showcasing projects and skills with smooth animations and interactive elements.",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-      liveUrl: "#",
+      liveUrl: "https://aaarthik.vercel.app/",
       repoUrl: "https://github.com/aarthik5/fluid-intro",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=250&fit=crop",
       hasLiveDemo: true
