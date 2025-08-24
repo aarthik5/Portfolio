@@ -8,41 +8,41 @@ const ContactSection = () => {
       icon: Linkedin,
       label: "LinkedIn",
       value: "Connect with me",
-      href: "https://linkedin.com/in/yourprofile",
+      href: "https://www.linkedin.com/in/aarthik-k-82643b293/",
       color: "text-[#0077B5]"
     },
     {
       icon: Github,
       label: "GitHub",
       value: "Check my repositories",
-      href: "https://github.com/yourusername",
+      href: "https://github.com/aarthik5",
       color: "text-[#333]"
     },
     {
       icon: Mail,
       label: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com",
+      value: "aarthikkudungu7@gmail.com",
+      href: "mailto:aarthikkudungu7@gmail.com",
       color: "text-[#EA4335]"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+91 6366049563",
+      href: "tel:+916366049563",
       color: "text-primary"
     },
     {
       icon: MessageCircle,
       label: "WhatsApp",
       value: "Message me",
-      href: "https://wa.me/15551234567",
+      href: "https://wa.me/916366049563",
       color: "text-[#25D366]"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Your City, Country",
+      value: "Mangalore, India",
       href: "#",
       color: "text-[#FF5722]"
     }

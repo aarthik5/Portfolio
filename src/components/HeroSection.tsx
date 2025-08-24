@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Download, ArrowDown } from 'lucide-react';
-import profilePicture from '@/assets/profile-picture.jpg';
+import profilePicture from '@/assets/Aarthik_K_Social_Media_Coordinator.jpg';
 import floatingShapes from '@/assets/floating-shapes.jpg';
 
 const HeroSection = () => {
@@ -34,11 +34,11 @@ const HeroSection = () => {
             <h1 className="text-5xl lg:text-7xl font-bold mb-6">
               <span className="gradient-text">Hello, I'm</span>
               <br />
-              <span className="text-primary-foreground">Your Name</span>
+              <span className="text-primary-foreground">Aarthik K</span>
             </h1>
             
             <h2 className="text-2xl lg:text-3xl text-primary-foreground/80 mb-6">
-              Full Stack Developer
+              Aspiring Software Engineer
             </h2>
             
             <p className="text-lg text-primary-foreground/70 mb-8 max-w-lg">
@@ -47,7 +47,10 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="btn-hero text-primary-foreground border-0 px-8 py-6 text-lg">
+              <Button 
+                className="btn-hero text-primary-foreground border-0 px-8 py-6 text-lg"
+                onClick={() => window.open('https://drive.google.com/file/d/1Opjz2D5BL9cvmwJ_p5EJDNeh_NaSEUgz/view?usp=sharing', '_blank')}
+              >
                 <Download className="w-5 h-5 mr-2" />
                 Download Resume
               </Button>

@@ -6,57 +6,53 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce application built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
+      title: "Portfolio Website",
+      description: "A modern, responsive portfolio website showcasing projects and skills with smooth animations and interactive elements.",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
       liveUrl: "#",
-      repoUrl: "#",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop"
+      repoUrl: "https://github.com/aarthik5/fluid-intro",
+      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=250&fit=crop",
+      hasLiveDemo: true
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      technologies: ["Vue.js", "Firebase", "Vuetify", "Socket.io"],
+      title: "Java Socket-Based Print Server",
+      description: "Built a client-server print system with secure login and automatic file printing. Implemented real-time socket communication with error handling for disconnections.",
+      technologies: ["Java", "Swing", "Socket Programming"],
       liveUrl: "#",
-      repoUrl: "#",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop"
+      repoUrl: "https://github.com/aarthik5/PrintServer",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop",
+      hasLiveDemo: false
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      description: "A responsive weather dashboard that displays current conditions and forecasts for multiple cities with beautiful data visualizations.",
-      technologies: ["React", "TypeScript", "Chart.js", "OpenWeather API"],
+      title: "Role-Based Online Voting Platform",
+      description: "Developed a secure voting system with JWT authentication and admin candidate management. Created a responsive React frontend and RESTful backend with file upload support.",
+      technologies: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js"],
       liveUrl: "#",
-      repoUrl: "#",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=250&fit=crop"
+      repoUrl: "https://github.com/aarthik5/college-voting",
+      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop",
+      hasLiveDemo: false
     },
     {
       id: 4,
-      title: "Social Media Dashboard",
-      description: "A comprehensive dashboard for managing multiple social media accounts with analytics, scheduling, and engagement metrics.",
-      technologies: ["Next.js", "MongoDB", "TailwindCSS", "Social APIs"],
+      title: "RainTrack - Rainfall Logger App",
+      description: "Built a full-stack rainfall logging app with secure authentication, responsive dashboard, and CRUD functionality for rain records. Developed admin panel and timestamped history.",
+      technologies: ["React.js", "Tailwind CSS", "Node.js", "Express", "MongoDB", "JWT"],
       liveUrl: "#",
-      repoUrl: "#",
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=250&fit=crop"
+      repoUrl: "https://github.com/aarthik5/raintrack",
+      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=250&fit=crop",
+      hasLiveDemo: false
     },
     {
       id: 5,
-      title: "Portfolio Website",
-      description: "A modern, responsive portfolio website showcasing projects and skills with smooth animations and interactive elements.",
-      technologies: ["React", "TypeScript", "Framer Motion", "Tailwind"],
+      title: "Anonymous Confession Wall App",
+      description: "Created a full-stack anonymous posting app with secure login, post interactions, and moderation features. Implemented real-time updates, flagging system, and dark neon-glass UI theme.",
+      technologies: ["Flutter", "Dart", "Firebase Auth", "Firestore"],
       liveUrl: "#",
-      repoUrl: "#",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=250&fit=crop"
-    },
-    {
-      id: 6,
-      title: "Fitness Tracker",
-      description: "A mobile-first fitness tracking application with workout planning, progress monitoring, and social features.",
-      technologies: ["React Native", "Express.js", "MongoDB", "Redux"],
-      liveUrl: "#",
-      repoUrl: "#",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop"
+      repoUrl: "https://github.com/aarthik5/confession-app",
+      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=250&fit=crop",
+      hasLiveDemo: false
     }
   ];
 
@@ -86,14 +82,16 @@ const ProjectsSection = () => {
                 />
                 <div className="absolute inset-0 bg-secondary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="flex space-x-4">
-                    <Button
-                      size="sm"
-                      className="btn-hero"
-                      onClick={() => window.open(project.liveUrl, '_blank')}
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Live Demo
-                    </Button>
+                    {project.hasLiveDemo && (
+                      <Button
+                        size="sm"
+                        className="btn-hero"
+                        onClick={() => window.open(project.liveUrl, '_blank')}
+                      >
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Live Demo
+                      </Button>
+                    )}
                     <Button
                       size="sm"
                       variant="outline"
@@ -125,19 +123,21 @@ const ProjectsSection = () => {
                 </div>
 
                 <div className="flex space-x-3">
+                  {project.hasLiveDemo && (
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="flex-1"
+                      onClick={() => window.open(project.liveUrl, '_blank')}
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Live
+                    </Button>
+                  )}
                   <Button
                     size="sm"
                     variant="outline"
-                    className="flex-1"
-                    onClick={() => window.open(project.liveUrl, '_blank')}
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Live
-                  </Button>
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    className="flex-1"
+                    className={project.hasLiveDemo ? "flex-1" : "w-full"}
                     onClick={() => window.open(project.repoUrl, '_blank')}
                   >
                     <Github className="w-4 h-4 mr-2" />

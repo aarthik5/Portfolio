@@ -4,31 +4,25 @@ import { GraduationCap, Briefcase, Code, Database, Globe, Smartphone } from 'luc
 const AboutSection = () => {
   const education = [
     {
-      degree: "Bachelor's in Computer Science",
-      institution: "University Name",
-      year: "2020-2024",
-      description: "Focused on software engineering, algorithms, and data structures."
+      degree: "Master of Computer Applications",
+      institution: "NMAM Institute of Technology | NITTE University",
+      year: "Pursuing 2024 – 2026",
+      description: "Current CGPA: 7.74"
     },
     {
-      degree: "Full Stack Development Certification",
-      institution: "Tech Academy",
-      year: "2023",
-      description: "Intensive program covering modern web development technologies."
+      degree: "Bachelor of Computer Applications",
+      institution: "ST Aloysius College Manglore | Mangalore University",
+      year: "Graduated 2024",
+      description: "CGPA: 6.32"
     }
   ];
 
   const experience = [
     {
-      role: "Senior Frontend Developer",
-      company: "Tech Company",
-      period: "2023 - Present",
-      description: "Led development of responsive web applications using React and TypeScript."
-    },
-    {
-      role: "Full Stack Developer",
-      company: "Startup Inc.",
-      period: "2022 - 2023",
-      description: "Built and maintained full-stack applications with modern frameworks."
+      role: "Intern",
+      company: "Ethical Byte",
+      period: "Dec 2023",
+      description: "Assisted in penetration testing, vulnerability assessments, security audits, and ethical hacking challenges using KaliLinux."
     }
   ];
 
@@ -46,10 +40,10 @@ const AboutSection = () => {
         <div className="text-center mb-16 fade-in-up">
           <h2 className="text-4xl lg:text-5xl font-bold gradient-text mb-6">About Me</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            I'm a passionate developer with a love for creating innovative solutions. 
-            With expertise in modern web technologies and a keen eye for design, 
-            I strive to build applications that not only function well but also provide 
-            exceptional user experiences.
+            Aspiring Software Engineer with a strong foundation in Python, Java, and data structures, seeking to apply
+            academic knowledge and hands-on project experience to design, develop, and maintain efficient software solutions.
+            Eager to contribute to collaborative development teams, solve real-world problems, and continuously enhance skills
+            in software design, algorithms, and full-stack development.
           </p>
         </div>
 

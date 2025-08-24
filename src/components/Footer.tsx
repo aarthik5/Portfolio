@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <p className="text-sm">
-              © {currentYear} Your Name. All rights reserved.
+              © {currentYear} Aarthik K. All rights reserved.
             </p>
           </div>
           
@@ -22,7 +22,7 @@ const Footer = () => {
         
         <div className="border-t border-secondary-foreground/20 mt-6 pt-6 text-center">
           <p className="text-xs text-secondary-foreground/70">
-            Designed and developed by Your Name
+            Designed and developed by Aarthik K
           </p>
         </div>
       </div>

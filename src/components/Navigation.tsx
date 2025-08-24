@@ -20,7 +20,8 @@ const Navigation = () => {
   };
 
   const refreshPage = () => {
-    window.location.reload();
+    // Scroll to top smoothly
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -36,7 +37,7 @@ const Navigation = () => {
             onClick={refreshPage}
             className="text-2xl font-bold gradient-text hover:scale-105 transition-transform duration-300"
           >
-            Your Name
+            Aarthik K
           </button>
 
           {/* Navigation Links */}
