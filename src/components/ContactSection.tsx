@@ -100,7 +100,7 @@ const ContactSection = () => {
               <Button 
                 variant="outline"
                 className="px-8 py-6 text-lg"
-                onClick={() => window.open('https://linkedin.com/in/yourprofile', '_blank')}
+                onClick={() => window.open('https://www.linkedin.com/in/aarthik-k-82643b293/', '_blank')}
               >
                 <Linkedin className="w-5 h-5 mr-2" />
                 Connect on LinkedIn
