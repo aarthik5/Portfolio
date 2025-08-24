@@ -92,7 +92,7 @@ const ContactSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 className="btn-hero px-8 py-6 text-lg"
-                onClick={() => window.open('mailto:your.email@example.com', '_blank')}
+                onClick={() => window.open('mailto:aarthikkudungu7@gmail.com', '_blank')}
               >
                 <Mail className="w-5 h-5 mr-2" />
                 Send Email
